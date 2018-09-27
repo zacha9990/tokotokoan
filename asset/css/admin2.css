@@ -1,0 +1,54 @@
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+#pembungkus
+{
+	width: 100%;
+	background: #242628;
+}
+.navbar
+{
+	margin-bottom: 0px;
+}
+.sidebar-collapse ul li
+{
+	background: #242628;
+	border-bottom: 1px solid #3b3e42;
+}
+.sidebar-collapse ul li a
+{
+	color: white;
+}
+.sidebar-collapse ul li a:hover
+{
+	color: white;
+	background: #5BC0DE;
+}
+#bg-page
+{
+	background: white;
+	padding: 18px;
+}
+@media(min-width: 768px)
+{
+	#bungkus-page
+	{
+		margin: 0 0 0 260px;
+		padding: 15px;
+		min-height: 1100px;
+		background: #efefef;
+	}
+	#bg-page
+	{
+		min-height: 1100px;
+	}
+	.navbar-side
+	{
+		width: 260px;
+		min-height: 1100px;
+		position: absolute;
+		background: #242628;
+		z-index: 1;
+	}
+}

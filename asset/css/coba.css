@@ -1,0 +1,43 @@
+
+#bg-kr
+{
+	padding: 10px 12px 4px 15px;
+	background: #e5e6e8;
+}
+
+#bg-kn
+{
+	padding: 10px 12px 4px 15px;
+
+	background: #337ab7;
+}
+#menu
+{
+	background: #383636;
+}
+#menu a
+{
+	color: #ebe7e0;
+}
+#menu ul li a:hover
+{
+	color: #383636;
+	background: white;
+}
+#menu .dropdown ul
+{
+	background: #383636;
+}
+#menu .dropdown ul a
+{
+	color: #ebe7e0;
+}
+#menu li .dropdown a
+{
+
+}
+#menu ul .dropdown-menu li a:hover
+{
+	background: white;
+	color: #383636;
+}
