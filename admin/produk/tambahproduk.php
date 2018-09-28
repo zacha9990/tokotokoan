@@ -76,7 +76,7 @@ if(isset($_POST['simpan']))
 		}
 		else
 		{
-			$produk->tambah_produk($_POST['nama_produk'], $_POST['id_kategori'], $_POST['deskripsi'], $_POST['harga'], $_POST['berat'], $_POST['stok'], $_FILES['foto_produk']);
+			$produk->tambah_produk($_POST['nama_produk'], $_POST['id_kategori'], $_POST['deskripsi'], $_POST['harga'], $_POST['berat'], $_POST['stok'], $_FILES['foto_produk'], $format);
 
 			echo "<script>alert ('Data Produk Berhasil Ditambahkan'); location= 'index.php?halaman=produk';</script>";
 		}

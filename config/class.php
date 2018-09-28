@@ -242,11 +242,11 @@ class produk
 		}
 		return $semuadata;
 	}
-	function tambah_produk($nama, $idkat, $desk, $hrg, $berat, $stok, $foto)
+	function tambah_produk($nama, $idkat, $desk, $hrg, $berat, $stok, $foto, $format)
 	{
-		$namafoto= $foto ['name'];
+		$namafoto= $format;
 		$waktu= date("Y-m-d-H-i-s");
-		$namabaru= $waktu."_".$namafoto;
+		$namabaru= $waktu.".".$namafoto;
 		$lokasi= $foto [tmp_name];
 		move_uploaded_file($lokasi, "../asset/img/produk/$namabaru");
 		$this->koneksi->query("INSERT INTO produk (nama_produk, id_kategori, deskripsi, harga, berat, stok, foto_produk) VALUES ('$nama', '$idkat','$desk', '$hrg', '$berat', '$stok', '$namabaru')")or die (mysqli_error($this->koneksi));
