@@ -72,7 +72,7 @@ $pro = $produk->tampil_produk();
 <div class="produk">
 	<div class="container">
 		<div class="row">
-			<?php foreach ($pro as $key => $value): ?>
+			<?php $i=1; foreach ($pro as $key => $value): ?>
 				<div class="col-md-3">
 					<div class="my-list">
 						<div>
@@ -123,6 +123,9 @@ $pro = $produk->tampil_produk();
 						<a href="index.php?halaman=detail&id=<?php echo $value['id_produk'] ?>" class="btn btn-info">Detail</a>
 					</div>
 				</div>
+			<?php if ($i%4 == 0){
+				echo "</div><div class='row'>";
+			} $i++; ?>
 			<?php endforeach ?>
 		</div>
 	</div>

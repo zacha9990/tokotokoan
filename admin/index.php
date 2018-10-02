@@ -59,7 +59,7 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin Sepeda Jaya</title>
+	<title>Admin Gallery Helm</title>
 	<meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -69,6 +69,7 @@ else
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../asset/css/admin2.css">
+	<link rel="stylesheet" type="text/css" href="../asset/editor/bootstrap-wysihtml5.css">
 </head>
 <body>
 	<div id="pembungkus">
@@ -80,7 +81,7 @@ else
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" style="color: black">Admin Sepeda Jaya</a>
+				<a class="navbar-brand" style="color: black">Admin Gallery Helm</a>
 			</div>
 		</nav>
 		<nav class="navbar-default navbar-side">
@@ -269,6 +270,8 @@ else
 		<script src="../asset/js/admin.js"></script>
 		<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 		<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+		<script src="../asset/editor/wysihtml5-0.3.0.js"></script>
+		<script src="../asset/editor/bootstrap-wysihtml5.js"></script>
 		<script>
 			$(document).ready(function() {
 		    $('#table').DataTable();
@@ -276,7 +279,15 @@ else
 		</script>
 		<script src="../asset/ckeditor/ckeditor.js"></script>
 		<script>
-			CKEDITOR.replace("theeditor");
+			
+
+			    $(document).ready(function() {
+
+					$('.textarea_editor').wysihtml5();
+
+
+				});
+
 		</script>
 </body>
 </html>

@@ -8,7 +8,7 @@ $tampil = $kategori->tampil_kategori();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sepeda Jaya</title>
+	<title>Gallery Helm</title>
 	<link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../asset/font-awesome/css/font-awesome.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +24,7 @@ $tampil = $kategori->tampil_kategori();
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand">Sepeda Jaya</a>
+				<a class="navbar-brand">Gallery Helm</a>
 			</div>
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="nav navbar-nav" style="padding-top: 5px">

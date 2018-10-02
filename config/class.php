@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-$database= new mysqli("localhost","root","123456","toko");
+$database= new mysqli("localhost","root","","toko");
 
 
 // CLASS member

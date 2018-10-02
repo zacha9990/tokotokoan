@@ -28,7 +28,7 @@ $kat= $kategori->tampil_kategori();
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Deskripsi</label>
 		<div class="col-sm-10">
-			<textarea class="form-control" name="deskripsi" rows="10"></textarea>
+			<textarea class="textarea_editor form-control" name="deskripsi" rows="10"></textarea>
 		</div>
 	</div>
 	<div class="form-group">
@@ -40,13 +40,13 @@ $kat= $kategori->tampil_kategori();
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Berat</label>
 		<div class="col-sm-10">
-			<input type="number" name="berat" class="form-control">
+			<input type="text" name="berat" class="form-control">
 		</div>
 	</div>
 	<div class="form-group">
 		<label class="col-sm-2 control-label">Stok</label>
 		<div class="col-sm-10">
-			<input type="number" name="stok" class="form-control">
+			<input type="number" value="10" name="stok" class="form-control">
 		</div>
 	</div>
 	<div class="form-group">
@@ -78,7 +78,7 @@ if(isset($_POST['simpan']))
 		{
 			$produk->tambah_produk($_POST['nama_produk'], $_POST['id_kategori'], $_POST['deskripsi'], $_POST['harga'], $_POST['berat'], $_POST['stok'], $_FILES['foto_produk'], $format);
 
-			echo "<script>alert ('Data Produk Berhasil Ditambahkan'); location= 'index.php?halaman=produk';</script>";
+			echo "<script>location= 'index.php?halaman=produk';</script>";
 		}
 	}
 	else
